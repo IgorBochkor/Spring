@@ -34,9 +34,6 @@ public class AppConfig {
         props.put("hibernate.hbm2ddl.auto", "create-drop");
         factoryBean.setHibernateProperties(props);
         factoryBean.setAnnotatedClasses(User.class);
-
         return factoryBean;
-
     }
-
 }
