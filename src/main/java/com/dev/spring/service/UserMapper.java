@@ -9,15 +9,9 @@ public class UserMapper {
 
     public UserResponseDto toDto(User user) {
         UserResponseDto responseDto = new UserResponseDto();
+        responseDto.setId(user.getId());
         responseDto.setName(user.getName());
         responseDto.setAge(user.getAge());
         return responseDto;
-    }
-
-    public User toUser(UserResponseDto userResponseDto) {
-        User user = new User();
-        user.setName(userResponseDto.getName());
-        user.setAge(userResponseDto.getAge());
-        return user;
     }
 }
